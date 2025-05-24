@@ -2,6 +2,10 @@ services:
   - type: web
     name: coin-demo
     env: python
+    plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: voila app.ipynb --port 10000 --no-browser --Voila.allow_origin='*'
-    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
+
