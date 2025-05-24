@@ -4,7 +4,7 @@ services:
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: voila app.ipynb --port=$PORT --no-browser --Voila.allow_origin=*
+    startCommand: voila main.ipynb --port=$PORT --no-browser --Voila.allow_origin=*
     envVars:
       - key: PYTHON_VERSION
         value: 3.10
