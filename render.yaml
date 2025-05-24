@@ -1,6 +1,7 @@
 services:
   - type: web
-    name: coin-rules-app
+    name: coin-demo
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: voila main.ipynb --port=$PORT --no-browser --Voila.configuration.allow_origin="*"
+    startCommand: voila app.ipynb --port 10000 --no-browser --Voila.allow_origin='*'
+    plan: free
