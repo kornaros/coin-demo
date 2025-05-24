@@ -4,8 +4,9 @@ services:
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: voila coin_game.ipynb --port=$PORT --address=0.0.0.0 --no-browser
+    startCommand: voila coin_game.ipynb --port=$PORT --no-browser
     envVars:
       - key: PYTHON_VERSION
         value: 3.10
-
+      - key: VOILA_SERVER_ADDRESS
+        value: 0.0.0.0
