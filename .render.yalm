@@ -8,5 +8,3 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.10
-      - key: VOILA_SERVER_ADDRESS
-        value: 0.0.0.0
